@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'docktrin';
+    src: url(../Fontes/docktrin.ttf); format:('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Genova';
+    src: url(../Fontes/Genova.otf); format:('opentype');
+    font-weight: normal;
+}
+:root{
+    --fundo: #ebe5c5;
+    --branco: #ffffff;
+    --branco2: #ffffff79;
+    --preto: #000000;
+    --preto2: #0000009d;
+    --verde1: #78EC71;
+    --verde2: #66CA61;
+    --verde3: #55A851;
+    --verde4: #7BF575;
+    --verde5: #448640;
+    --verde6: #336430;
+    --verde7: #2C8638; 
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Genova', sans-serif;
+    --fonte-titulo: 'docktrin', sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a.externo::after{
+    content: '\00A0\1F517';
+}
+header{
+    background-image: linear-gradient(to bottom, var(--branco), var(--verde5));
+    min-height: 100px;
+}
+header > h1{
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 3px #00000083;
+}
+header > p{
+    font-family: var(--fonte-titulo);
+    font-weight: normal;
+    font-size: 1.5em;
+    text-align: center;
+    margin: auto;
+    max-width: 600px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: 2px 2px 3px #00000080;
+}
+header > a > img {
+    max-width: 150px;
+    max-height: 80px;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+nav{
+    background-color: var(--verde5);
+    padding: 3px;
+    margin: auto;
+    box-shadow: 2px 2px 2px #00000080;
+}
+nav > a{
+    color: var(--preto);
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 5px;
+    transition-duration: 1s;
+}
+nav > a:hover{
+    padding-bottom: 5px;
+    background-color: var(--branco2);
+    color: #000000;
+    border-radius: 6px;
+}
+body{
+    background-color: var(--fundo);
+}
+main > h1{
+    background-color: var(--verde2);
+    font-weight: bold;
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    padding-bottom: 5px;
+    margin: auto;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.336);  
+}
+main > div#history{
+    background-color: var(--fundo);
+}
+main > div#history > h2{
+    background-image: linear-gradient(to right, var(--verde3), var(--fundo));
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.5em
+}
+main > div#history > p{
+    text-align: justify;
+    text-indent: 15px;
+    font-size: larger;
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    padding: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}   
+main > div#mission > h2 {
+    background-color: var(--verde2);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-bottom: 5px;
+    margin: auto;
+}
+main > div#mission > h3 {
+    background-image: linear-gradient(to right, var(--verde3), var(--fundo));
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.336);  
+}
+main > div#mission > p.mission {
+    text-align: justify;
+    text-indent: 15px;
+    font-size: larger;
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    padding: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}
+main > div#mission > p#vision{
+    text-align: justify;
+    text-indent: 15px;
+    font-size: larger;
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    padding: 5px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}
+main > div#mission > ul{
+    list-style-position: inside;
+    list-style-type: '\2714\00A0\00A0';
+    columns: 5;
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    font-size: 1.4em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+main > div#fundators > h2 {
+    background-color: var(--verde2);
+}
+main > div#fundators > p {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    text-align: justify;
+    font-size: 1.4em;
+    font-family: var(--fonte-destaque);
+    font-weight: bolder;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.281);
+}
+main > div#fundators > p > img {
+    max-width: 400px;
+    max-height: 400px;
+}
+footer {
+    background-color: var(--verde7);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+footer a {
+    color: #ffffff;
+    font-weight: bolder;
+    text-decoration: underline;
+}
